@@ -1,0 +1,27 @@
+
+
+  .navbar a.nav-link {
+    color:rgb(12, 4, 52); /* Couleur des liens */
+    font-weight: bolder;
+
+  }
+  .navbar a.nav-link:hover {
+    color: rgba(103, 7, 65, 0.267); /* Couleur des liens au survol */
+  }
+ .navbar-brand{
+  color:rgb(12, 4, 52); /* Couleur des liens */
+    font-weight: bold; 
+  display: flex;
+  align-items: center;
+ }
+
+
+
+.navbar-brand img {
+  margin-right: 10px; /* Espacement entre l'image et le texte */
+}
+
+
+
+
+  

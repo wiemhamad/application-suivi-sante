@@ -1,0 +1,48 @@
+
+
+<div class="background-image d-flex flex-column justify-content-center align-items-center text-white" style="min-height: 100vh;">
+    <div class="container d-flex align-items-center justify-content-center" >
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card shadow-lg rounded login-card">
+            <div class="card-body p-4">
+              <h5 class="card-title text-center mb-4">Login</h5>
+              <div class="login-container">
+                <form #myform="ngForm" (ngSubmit)="onSubmit()">
+                
+                  <div class="mb-3">
+                    <label class="form-label">Votre nom:</label>
+                    <input type="text" required placeholder="votre username ici" pattern="[A-Z a-zéè]{3,30}" name="userName"
+                      [(ngModel)]="users.userName" #userName="ngModel" class="form-control">
+                    <div *ngIf="userName.touched && !userName.valid" class="alert alert-danger">
+                      <div *ngIf="userName.errors?.['required']">Veuillez saisir votre username</div>
+                      <div *ngIf="userName.errors?.['pattern']">Veuillez saisir un username valide!</div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Votre mot de passe:</label>
+                    <input type="password" required placeholder="votre mot de passe ici" name="password" [(ngModel)]="users.password"
+                      #pass="ngModel" class="form-control">
+                    <div *ngIf="pass.touched && !pass.valid" class="alert alert-danger">
+                      <div *ngIf="pass.errors?.['required']">Veuillez saisir votre mot de passe</div>
+                    </div>
+                  </div>
+                 <div class="mb-3">
+                 <div class="text-center">
+                  <button class="btn btn-primary" [disabled]="!condition || myform.invalid" type="submit">Envoyer</button>
+                </div></div>
+                <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+                <a routerLink="../inscri">s'inscrire</a>
+              </form>
+            </div>
+          
+                 
+              </div>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  

@@ -1,0 +1,92 @@
+.background-image {
+ /*   background-image: url("kji");*/
+ background-color: whitesmoke;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Cover the entire viewport height */
+    color: white; /* Ensure text is visible */
+  }
+/* Assurer que la carte a une image de fond */
+.card-background {
+  background-image: url('https://img.lb.wbmdstatic.com/vim/live/webmd/consumer_assets/site_images/home_page/living-healthy-mental-health.png?resize=484px:*&output-quality=70');
+  background-size: cover; /* Couvrir toute la surface du card */
+  background-position: center; /* Centrer l'image de fond */
+  background-repeat: no-repeat; /* Ne pas répéter l'image */
+  color: white; /* Couleur du texte pour contraster avec l'image de fond */
+  border-radius: 0.375rem; /* Coins arrondis pour le card */
+  overflow: hidden; /* Assurer que l'image de fond ne dépasse pas les bords du card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour l'effet de survol */
+  height: 250px; /* Hauteur fixe pour le card */
+}
+
+/* Réduire la taille du card pour un affichage plus compact */
+.card-background {
+  height: 250px; /* Ajustez la hauteur selon vos besoins */
+}
+
+/* Effet de survol pour agrandir le card */
+.card-background:hover {
+  transform: scale(1.05); /* Agrandir légèrement le card au survol */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajouter une ombre portée au survol */
+}
+
+
+/* Assurer que les liens n'ont pas de décoration et que le texte est blanc */
+.text-decoration-none {
+  text-decoration: none; /* Supprimer la décoration du lien */
+}
+
+.text-white {
+  color: white; /* Couleur du texte en blanc */
+}
+
+
+.card-title{
+  text-align: center;
+  color: rgb(29, 5, 73);
+  font-weight: bold;
+
+}
+.h1{
+  color: rgb(25, 1, 73);
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+ 
+}
+h1{
+  color: rgb(25, 1, 73);
+  font-weight: bold;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+hr
+{color:black}
+
+.img:hover{
+
+  transform: scale(1.05); /* Agrandir légèrement le card au survol */
+  box-shadow: 0 4px 8px rgba(62, 17, 161, 0.2); /* Ajouter une ombre portée au survol */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 0.375rem;
+ 
+}
+  p {
+text-shadow: rgb(244, 221, 178);
+color: rgb(1, 21, 61);
+font-family:'Times New Roman', Times, serif;
+font-weight: bold;
+font-size: 18px;
+
+  }
+  .box{
+    background-color:whitesmoke;
+   
+  }
+  .box:hover{
+    transform: scale(1.05); /* Agrandir légèrement le card au survol */
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border-radius: 0.375rem;
+  }

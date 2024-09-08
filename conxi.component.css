@@ -1,0 +1,54 @@
+html,body{
+    height: 100%;
+    margin: 0;
+}
+.container{
+height: 100%;
+width: 100%;
+}
+
+.background-image {
+    background-image: url('https://skymed.bg/wp-content/uploads/2024/06/medicalservices1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Cover the entire viewport height */
+    color: white; /* Ensure text is visible */
+  }
+  .login-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+
+.btn-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+}
+.form-control {
+  padding: auto;
+    font-size: 1rem; /* Increase font size for better readability */
+    border-radius: 0.75rem; /* Slightly rounded corners */
+    border: 1px solid #2b0d8e; /* Border color */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Border color on focus */
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25); /* Shadow on focus */
+}
+h5 {
+    color: rgba(20, 56, 172, 0.861);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+}

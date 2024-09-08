@@ -1,0 +1,99 @@
+
+<div class="d-flex">
+  <!-- Sidebar -->
+  <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 250px; height: 100vh;">
+    <a routerLink="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <span class="fs-4">Menu</span>
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a href="../../" class="nav-link btn btn-primary mb-2">Accueil</a>
+      </li>
+      <li class="nav-item">
+        <a href="../?" class="nav-link btn btn-primary mb-2">Découvrir</a>
+      </li>
+      <li class="nav-item">
+        <a href="/tasks/dossi" class="nav-link btn btn-primary">Votre dossier médical</a>
+      </li>
+  
+    </ul>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="background-image d-flex flex-column justify-content-center align-items-center text-white" style="min-height: 100vh;">
+    <div class="container d-flex align-items-center justify-content-center">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card shadow-lg rounded">
+            <div class="card-body p-4">
+              <!-- Main Form -->
+              <form>
+                <h3 class="text-center">Profil</h3>
+                <div class="mb-3">
+                  <label for="nom" class="form-label">Nom</label>
+                  <input type="text" class="form-control" id="nom" placeholder="Votre nom ici" required>
+                </div>
+                <div class="mb-3">
+                  <label for="prenom" class="form-label">Prénom</label>
+                  <input type="text" class="form-control" id="prenom" placeholder="Votre prénom ici" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Votre email ici" required>
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Mot de passe</label>
+                  <input type="password" class="form-control" id="password" placeholder="Votre mot de passe ici" required>
+                </div>
+                <div class="mb-3">
+                  <button type="submit" class="btn btn-primary w-100">Modifier</button>
+                </div>
+  
+                <!-- Cards Section -->
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                      <div class="card-body text-center">
+                        <h3 class="card-title">Dossiers des patients</h3>
+                        <p class="card-text">Accédez aux dossiers complets des patients, y compris les informations personnelles et les antécédents médicaux.</p>
+                        <a routerLink="/patients" class="btn btn-primary">Voir les patients</a>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                      <div class="card-body text-center">
+                        <h3 class="card-title">Fiches de soins</h3>
+                        <p class="card-text">Consultez et mettez à jour les fiches de soins des patients, avec les diagnostics, les traitements et les observations.</p>
+                        <a routerLink="/fiches-de-soin" class="btn btn-success">Voir les fiches de soins</a>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card h-100 shadow-sm">
+                      <div class="card-body text-center">
+                        <h3 class="card-title">Statistiques de santé</h3>
+                        <p class="card-text">Analysez les statistiques globales sur la santé des patients, avec des graphiques et des rapports détaillés.</p>
+                        <a routerLink="/statistiques" class="btn btn-info">Voir les statistiques</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+  
+  

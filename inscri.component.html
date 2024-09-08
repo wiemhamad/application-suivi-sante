@@ -1,0 +1,57 @@
+ 
+<div class="background-image d-flex flex-column justify-content-center align-items-center text-white" style="min-height: 150vh;">
+  <div class="container d-flex align-items-center justify-content-center">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card shadow-lg rounded">
+          <div class="card-body p-4">
+            <h5 class="card-title text-center mb-4 h55">S'inscrire</h5>
+ <form #myform="ngForm"(ngSubmit)="onSubmit()"  >             
+                <div class="mb-3">
+                  <label class="form-label">Votre nom:</label>
+                  <input type="text" required placeholder="votre name ici" pattern="[A-Z a-zéè]{3,30}" name="name"
+                    [(ngModel)]="user.name" #name="ngModel" class="form-control">
+                  <div *ngIf="name.touched && !name.valid" class="alert alert-danger">
+                    <div *ngIf="name.errors?.['required']">Veuillez saisir votre nom</div>
+                    <div *ngIf="name.errors?.['pattern']">Veuillez saisir un nom valide!</div>
+                  </div>
+                </div>
+              
+
+              
+                <div class="mb-3">
+                  <label class="form-label">Votre email:</label>
+                  <input type="email" required placeholder="votre mail ici" name="email" [(ngModel)]="user.email"
+                    #email="ngModel" class="form-control">
+                  <div *ngIf="email.touched && !email.valid" class="alert alert-danger">
+                    <div *ngIf="email.errors?.['required']">Veuillez saisir votre email</div>
+                    <div *ngIf="email.errors?.['email']">Veuillez saisir un email valide!</div>
+                  </div>
+                </div>
+              
+                <div class="mb-3">
+                  <label class="form-label">Votre mot de passe:</label>
+                  <input type="password" required placeholder="votre mot de passe ici" name="password" [(ngModel)]="user.password"
+                    #pass="ngModel" class="form-control">
+                  <div *ngIf="pass.touched && !pass.valid" class="alert alert-danger">
+                    <div *ngIf="pass.errors?.['required']">Veuillez saisir votre mot de passe</div>
+                  </div>
+                </div>
+              
+
+              
+                <div class="mb-3">
+                  <input type="checkbox" name="cd" [(ngModel)]="condition" #cd="ngModel">
+                  <label>J'ai lu et accepte les conditions</label>
+                </div>
+              
+                <div class="text-center">
+                     <button class="btn btn-primary" [disabled]="!condition || myform.invalid" type="submit">Envoyer</button>
+                </div>
+              
+                <a routerLink="../">Connexion</a>
+              </form>
+
+  
+
+            </div>  </div>  </div>  </div>  </div>  </div>
